@@ -1,18 +1,23 @@
 - name: Staffs
   link: theory/staffs
+  number: 0
   next: Clefs
   last: NULL
 
 - name: Clefs
   link: theory/clefs
+  number: 1
   next: Notes
   last: Staffs
 
 - name: Notes
   link: theory/notes
+  number: 2
 
 - name: Intervals
   link: theory/intervals
+  number: 3
 
 - name: Scale Degrees
   link: theory/scale_degrees
+  number: 4

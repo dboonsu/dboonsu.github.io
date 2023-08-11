@@ -2,8 +2,8 @@
 
 @keyframes dropFromTop {
     0% {
-        transform: translateY(-100%);
-        opacity: 0;
+        transform: translateY(-30%);
+        opacity: -1;
     }
 
     100% {
@@ -31,12 +31,16 @@ div.gallery {
 }
 
 div.box {
-    animation: 1s ease-out 0s 1 dropFromTop;
+    animation-name: dropFromTop;
+    animation-duration: 1s;
+    animation-delay: calc(var(--animation-order) * 100ms);
+    animation-fill-mode: both;
     background-color: $lightest_peach;
+    border-radius: 25px;
     margin: 90px;
     height: 300px;
     width: 300px;
-    transition: .3s;
+    transition: .5s;
 }
 
 div.box:hover {

@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+<!-- References _sass/navbar.scss-->
+<nav class="navbar">
+	<!-- Leftmost menu item -->
+	<div> David McCormick </div>
+
+	<!-- Iterates over items in _data/navigation and lists them from right to left-->
+	{% for item in site.data.navigation %}
+	<a href="{{ item.link }}" {% if page.url == item.link %} class="current_page" {% endif %}>
+		{{ item.name }} 
+	</a>
+	{% endfor %}
+</nav>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> {{ page.title }} </title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+	<body>
+		{% include navigation.html %}
+		<div class="main_paragraph"> {{ content }} </div>
+		{% if page.prev != null %} Previous: {% endif %}
+		<br />
+		{% if page.next != null %} Next: 
+			<a href="{{site.baseurl}}/theory/{{page.next}}.html">
+				{{ page.next | capitalize }}
+			</a>
+		{% endif %}
+	</body>
+</html>

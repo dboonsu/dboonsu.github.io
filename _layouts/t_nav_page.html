@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <h1> {{ page.title }} </h1>
+    <link rel="stylesheet" href="/assets/css/styles_navpage.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    {% include navigation.html %}
+    
+    <div class="gallery">
+        {% for item in site.data.navigation_theory %}
+        <div class="box">
+            <div class="image">
+
+            </div>
+            <div class="text">
+                <a href="{{ item.link }}"> {{ item.name }} </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

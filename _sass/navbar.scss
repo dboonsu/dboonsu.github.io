@@ -1,0 +1,35 @@
+@import 'colors';
+
+.current_page {
+	color: black;
+	background-image: linear-gradient($darker_peach, $lighter_peach);
+}
+
+.navbar {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: linear-gradient($darkest_peach, $lighter_peach);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.navbar div, .navbar a {
+	padding: 20px;
+	font-family: "Gill Sans", sans-serif;
+	color: $darkest_peach;
+}
+
+.navbar div {
+	padding: 18px;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+}
+
+.navbar a {
+	float: right;
+}

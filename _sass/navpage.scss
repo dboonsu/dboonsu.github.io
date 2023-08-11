@@ -1,0 +1,55 @@
+@import 'colors';
+
+@keyframes dropFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: $darkest_peach;
+    width: 50%;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    width: auto;
+}
+
+div.box {
+    animation: 1s ease-out 0s 1 dropFromTop;
+    background-color: $lightest_peach;
+    margin: 90px;
+    height: 300px;
+    width: 300px;
+    transition: .3s;
+}
+
+div.box:hover {
+    background-color: $darker_peach;
+    height: 340px;
+    width: 340px;
+}
+
+div.text {
+    width: 50%;
+    margin-top: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 35px;
+}

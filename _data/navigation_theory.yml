@@ -24,3 +24,7 @@
 - name: Scale Degrees
   link: theory/scale_degrees
   number: 4
+
+- name: Accidentals
+  link: theory/accidentals
+  number: 5

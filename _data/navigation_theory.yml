@@ -1,18 +1,21 @@
 - name: Staffs
   link: theory/staffs
   number: 0
+  image: /assets/images/staff.png
   next: Clefs
   last: NULL
 
 - name: Clefs
   link: theory/clefs
   number: 1
+  image: /assets/images/treble_clef.png
   next: Notes
   last: Staffs
 
 - name: Notes
   link: theory/notes
   number: 2
+  image: /assets/images/eighth_note.png
 
 - name: Intervals
   link: theory/intervals

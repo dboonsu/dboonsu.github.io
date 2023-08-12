@@ -12,9 +12,7 @@
     <div class="gallery">
         {% for item in site.data.navigation_theory %}
         <div class="box" style="--animation-order: {{item.number}};">
-            <div class="image">
-
-            </div>
+            <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
             <div class="text">
                 <a href="{{ item.link }}"> {{ item.name }} </a>
             </div>

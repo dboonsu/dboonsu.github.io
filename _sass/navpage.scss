@@ -49,9 +49,24 @@ div.box:hover {
     width: 340px;
 }
 
+div.box:hover img {
+    height: 220px;
+    width: 220px;
+}
+
+img.thumbnail {
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    transition: .5s;
+}
+
 div.text {
     width: 50%;
-    margin-top: 220px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;

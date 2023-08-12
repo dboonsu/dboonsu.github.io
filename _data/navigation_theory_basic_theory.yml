@@ -1,11 +1,19 @@
 - name: Intervals
   link: theory/intervals
+  image: /assets/images/thumbnail/interval_thumbnail.png
   number: 0
+
+- name: Symphony and Melody
+  link: theory/symphony_and_melody
+  image: /assets/images/thumbnail/symphony_melody_thumbnail.png
+  number: 1
 
 - name: Harmony and Dissonance
   link: theory/harmony_and_dissonance
-  number: 1
+  image: /assets/images/thumbnail/harmony_dissonance_thumbnail.png
+  number: 2
   
 - name: Basic Chords
   link: theory/chords
-  number: 2
+  image: /assets/images/thumbnail/chord_thumbnail.png
+  number: 3

@@ -1,22 +1,29 @@
 - name: Staffs
-  link: theory/staffs
+  link: theory/notation/staffs
+  image: /assets/images/thumbnail/staff_thumbnail.png
   number: 0
-  image: /assets/images/staff.png
-  next: Clefs
-  last: NULL
 
 - name: Clefs
-  link: theory/clefs
+  link: theory/notation/clefs
+  image: /assets/images/clefs/treble_clef.png
   number: 1
-  image: /assets/images/treble_clef.png
-  next: Notes
-  last: Staffs
 
 - name: Notes
-  link: theory/notes
+  link: theory/notation/notes
+  image: /assets/images/notes/eighth_note.png
   number: 2
-  image: /assets/images/eighth_note.png
 
 - name: Accidentals
-  link: theory/accidentals
+  link: theory/notation/accidentals
+  image: /assets/images/accidentals/sharp.png
   number: 3
+  
+- name: Time Signatures
+  link: theory/notation/time_signatures
+  image: /assets/images/thumbnail/time_signature_thumbnail.png
+  number: 4
+
+- name: Rests
+  link: theory/notation/rests
+  image: /assets/images/thumbnail/rest_thumbnail.png
+  number: 5

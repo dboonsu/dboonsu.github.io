@@ -36,22 +36,30 @@ div.box {
     animation-delay: calc(var(--animation-order) * 100ms);
     animation-fill-mode: both;
     background-color: $lightest_peach;
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 90px;
     height: 300px;
     width: 300px;
     transition: .5s;
+    box-shadow: $darker_peach 10px 10px;
 }
 
 div.box:hover {
     background-color: $darker_peach;
     height: 340px;
     width: 340px;
+    box-shadow: $darkest_peach 14px 14px;
 }
 
+/* need to manually set height to make margins work */
 div.box:hover img {
+    transform: scale(1.05, 1);
+    max-width: auto;
     height: 220px;
-    width: 220px;
+}
+
+div.box:hover div.text {
+    margin-top: 30px;
 }
 
 img.thumbnail {
@@ -59,7 +67,8 @@ img.thumbnail {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: auto;
+    max-width: 200px;
     height: 200px;
     transition: .5s;
 }
@@ -71,4 +80,5 @@ div.text {
     margin-right: auto;
     text-align: center;
     font-size: 35px;
+    transition: .5s;
 }

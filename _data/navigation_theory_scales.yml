@@ -1,27 +1,34 @@
 - name: Scales
   link: theory/scales
+  image: /assets/images/thumbnail/major_scale_thumbnail.png
   number: 0
 
 - name: Scale Degrees
   link: theory_scale_degrees
+  image: /assets/images/thumbnail/scale_degrees_thumbnail.png
   number: 1
 
 - name: Chromatic Scale
   link: theory/chromatic_scale
+  image: /assets/images/thumbnail/chromatic_scale_thumbnail.png
   number: 2
 
 - name: Major Scale
   link: theory/major_scale
+  image: /assets/images/thumbnail/major_scale_thumbnail.png
   number: 3
 
 - name: Minor Scales
   link: theory/minor_scales
+  image: /assets/images/thumbnail/minor_scale_thumbnail.png
   number: 4
 
 - name: Pentatonic Scale
   link: theory/pentatonic_scale
+  image: /assets/images/thumbnail/pentatonic_scale_thumbnail.png
   number: 5
 
 - name: Modes
   link: theory/intervals
+  image: /assets/images/thumbnail/scale_degrees_thumbnail.png
   number: 6

@@ -5,17 +5,17 @@
 
 - name: Clefs
   link: theory/notation/clefs
-  image: /assets/images/clefs/treble_clef.png
+  image: /assets/images/thumbnail/clef_thumbnail.png
   number: 1
 
 - name: Notes
   link: theory/notation/notes
-  image: /assets/images/notes/eighth_note.png
+  image: /assets/images/thumbnail/note_thumbnail.png
   number: 2
 
 - name: Accidentals
   link: theory/notation/accidentals
-  image: /assets/images/accidentals/sharp.png
+  image: /assets/images/thumbnail/accidental_thumbnail.png
   number: 3
   
 - name: Time Signatures

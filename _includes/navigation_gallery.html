@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/assets/css/styles_navpage.css">
+
+<div class="gallery">
+    {% capture d_tag %} {{include.data}} {% endcapture %}
+
+    <!--
+        {{d_tag}}
+    {% assign li_ = site.data.navigation_theory | where: item.tag, {{d_tag}} %}
+    {{li_}}
+    li_
+    {% for item in site.data.navigation_theory%}
+    {% capture curr_tag %} {{item.tag}} {% endcapture %}
+    {{curr_tag}}
+    <div class="box" style="--animation-order: {{item.number}};">
+        <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
+        <div class="text">
+            <a href="{{ item.link }}"> {{ item.name }} </a>
+        </div>
+    </div>
+    {%endfor%}
+        add tags to the data (music notation, chords etc)
+        use a where_exp
+        pass the '' with include.data?
+
+        -->
+    {% assign fileLoc = include.data %}
+    {% for item in site.data[fileLoc] %}    
+    <div class="box" style="--animation-order: {{item.number}};">
+        <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
+        <div class="text">
+            <a href="{{ item.link }}"> {{ item.name }} </a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!--
+    {% for item in include.data %}
+
+    <div class="box" style="--animation-order: {{item.number}};">
+        <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
+        <div class="text">
+            <a href="{{ item.link }}"> {{ item.name }} </a>
+        </div>
+    </div>
+    {% endfor %}
+        --->
+</div>

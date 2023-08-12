@@ -2,23 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <h1> {{ page.title }} </h1>
     <link rel="stylesheet" href="/assets/css/styles_navpage.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
     {% include navigation.html %}
-    
-    <div class="gallery">
-        {% for item in site.data.navigation_theory %}
-        <div class="box" style="--animation-order: {{item.number}};">
-            <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
-            <div class="text">
-                <a href="{{ item.link }}"> {{ item.name }} </a>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+
+    {% assign titles = page.title | split: ", " %}
+    {% for title in titles %}
+        <h1> {{title}} </h1>
+
+        {% assign data_loc = title | downcase | prepend: page.prefix | replace: " ", "_" %}
+
+        {% include navigation_gallery.html data=data_loc %}
+    {% endfor %}
+
+
 
 </body>
 </html>

@@ -1,0 +1,15 @@
+- name: 7th Chords
+  link: theory/7th_chords
+  number: 0
+
+- name: 9th Chords and Beyond
+  link: theory/9th_chords
+  number: 1
+
+- name: Augmented and Dimished
+  link: theory/aug_dim
+  number: 2
+
+- name: Suspended Chords
+  link: theory/suspended
+  number: 3  

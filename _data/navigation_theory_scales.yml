@@ -1,0 +1,27 @@
+- name: Scales
+  link: theory/scales
+  number: 0
+
+- name: Scale Degrees
+  link: theory_scale_degrees
+  number: 1
+
+- name: Chromatic Scale
+  link: theory/chromatic_scale
+  number: 2
+
+- name: Major Scale
+  link: theory/major_scale
+  number: 3
+
+- name: Minor Scales
+  link: theory/minor_scales
+  number: 4
+
+- name: Pentatonic Scale
+  link: theory/pentatonic_scale
+  number: 5
+
+- name: Modes
+  link: theory/intervals
+  number: 6

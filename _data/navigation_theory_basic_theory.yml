@@ -1,0 +1,11 @@
+- name: Intervals
+  link: theory/intervals
+  number: 0
+
+- name: Harmony and Dissonance
+  link: theory/harmony_and_dissonance
+  number: 1
+  
+- name: Basic Chords
+  link: theory/chords
+  number: 2

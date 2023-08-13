@@ -4,13 +4,31 @@
     {% capture d_tag %} {{include.data}} {% endcapture %}
 
     {% assign fileLoc = include.data %}
-    {% for item in site.data[fileLoc] %}    
-    <div class="scroll-reveal box">
+    {% for item in site.data[fileLoc] %}
+
+    {% assign curr_pos = item.number | modulo: 3 %}
+    {% if curr_pos == 0 %}
+    <div class="scroll-reveal box left">
         <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
         <div class="text">
             <a href="{{ item.link }}"> {{ item.name }} </a>
         </div>
     </div>
+    {% elsif curr_pos == 1 %}
+    <div class="scroll-reveal box center">
+        <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
+        <div class="text">
+            <a href="{{ item.link }}"> {{ item.name }} </a>
+        </div>
+    </div>
+    {% elsif curr_pos == 2 %}
+    <div class="scroll-reveal box right">
+        <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
+        <div class="text">
+            <a href="{{ item.link }}"> {{ item.name }} </a>
+        </div>
+    </div>
+    {% endif %}
     {% endfor %}
 
 </div>

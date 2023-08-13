@@ -47,6 +47,18 @@ div.box:hover {
     box-shadow: $darkest_peach 14px 14px;
 }
 
+.left {
+    animation-delay: 0ms;
+}
+
+.center {
+    animation-delay: 100ms;
+}
+
+.right {
+    animation-delay: 200ms;
+}
+
 .scroll-reveal {
     opacity: 0;
 }

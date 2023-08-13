@@ -1,19 +1,19 @@
 - name: 7th Chords
-  link: theory/7th_chords  
+  link: theory/advanced_chords/7th_chords  
   image: /assets/images/thumbnail/7th_chord_thumbnail.png
   number: 0
 
-- name: 9th Chords and Beyond
-  link: theory/9th_chords
+- name: 9th Chords And Beyond
+  link: theory/advanced_chords/9th_chords_and_beyond
   image: /assets/images/thumbnail/9th_chord_thumbnail.png
   number: 1
 
-- name: Augmented and Dimished Chords
-  link: theory/aug_dim
+- name: Augmented And Diminished Chords
+  link: theory/advanced_chords/augmented_and_diminished_chords
   image: /assets/images/thumbnail/augmented_and_diminished_thumbnail.png
   number: 2
 
 - name: Suspended Chords
-  link: theory/suspended
+  link: theory/advanced_chords/suspended_chords
   image: /assets/images/thumbnail/suspended_chord_thumbnail.png
   number: 3  

@@ -14,6 +14,11 @@
 {% assign prev_item = site.data[data_loc] | where: "number", prev %}
 {% assign next_item = site.data[data_loc] | where: "number", next %}
 
+{{prev}}
+{{next}}
+{{prev_item}}
+{{next_item}}
+
 <!--Display previous and next items-->
 <div class="prev_next_bar">
     {% if prev_item and prev_item.size != 0 %}

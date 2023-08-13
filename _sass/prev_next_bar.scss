@@ -30,13 +30,13 @@ div.prev_next_bar {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    animation: fadeIn;
+    animation-duration: 1s;
 }
 
 .lbox {
     flex: 1;
     text-align: right;
-    animation: fadeIn;
-    animation-duration: 1s;
 }
 
 .cbox {
@@ -47,6 +47,4 @@ div.prev_next_bar {
 .rbox {
     flex: 1;
     text-align: left;
-    animation: fadeIn;
-    animation-duration: 1s;
 }

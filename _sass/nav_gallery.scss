@@ -31,10 +31,6 @@ div.gallery {
 }
 
 div.box {
-    animation-name: dropFromTop;
-    animation-duration: 1s;
-    animation-delay: calc(var(--animation-order) * 100ms);
-    animation-fill-mode: both;
     background-color: $lightest_peach;
     border-radius: 20px;
     margin: 90px;
@@ -49,6 +45,17 @@ div.box:hover {
     height: 340px;
     width: 340px;
     box-shadow: $darkest_peach 14px 14px;
+}
+
+.scroll-reveal {
+    opacity: 0;
+}
+
+.active {
+    animation-name: dropFromTop;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 1;
 }
 
 /* need to manually set height to make margins work */

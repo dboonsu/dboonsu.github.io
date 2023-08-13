@@ -5,7 +5,7 @@
 
     {% assign fileLoc = include.data %}
     {% for item in site.data[fileLoc] %}    
-    <div class="box" style="--animation-order: {{item.number}};">
+    <div class="scroll-reveal box">
         <img class="thumbnail" src="{{site.baseurl}}{{item.image}}">
         <div class="text">
             <a href="{{ item.link }}"> {{ item.name }} </a>

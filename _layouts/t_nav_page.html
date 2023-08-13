@@ -10,11 +10,12 @@
 
     {% assign titles = page.title | split: ", " %}
     {% for title in titles %}
-        <h1> {{title}} </h1>
+    <h1> {{title}} </h1>
 
-        {% assign data_loc = title | downcase | prepend: page.prefix | replace: " ", "_" %}
+    {% assign data_loc = title | downcase | prepend: page.prefix | replace: " ", "_" %}
 
-        {% include navigation_gallery.html data=data_loc %}
+    {% include navigation_gallery.html data=data_loc %}
     {% endfor %}
 </body>
+<script src="{{ site.baseurl }}{% link assets/js/test.js %}"></script>
 </html>

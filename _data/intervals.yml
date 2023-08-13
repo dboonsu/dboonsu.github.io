@@ -1,0 +1,64 @@
+- semitones: 0
+  quality: Perfect unison
+  shorthand: P1
+  alias: 
+
+- semitones: 1
+  quality: Minor second
+  shorthand: m2
+  alias: semitone, half-step
+
+- semitones: 2
+  quality: Major second
+  shorthand: M2
+  alias: tone, whole-step
+
+- semitones: 3
+  quality: Minor third
+  shorthand: m3
+  alias:
+
+- semitones: 4
+  quality: Major third
+  shorthand: M3
+  alias:
+
+- semitones: 5
+  quality: Perfect fourth
+  shorthand: P4
+  alias:
+
+- semitones: 6
+  quality: Augmented fourth, diminished fifth
+  shorthand: 
+  alias: tritone
+
+- semitones: 7
+  quality: Perfect fifth
+  shorthand: P5
+  alias:
+
+- semitones: 8
+  quality: Minor sixth
+  shorthand: m6
+  alias:
+
+- semitones: 9
+  quality: Major sixth
+  shorthand: M6
+  alias:
+
+- semitones: 10
+  quality: Minor seventh
+  shorthand: m7
+  alias:
+
+- semitones: 11
+  quality: Major seventh
+  shorthand: M7
+  alias:
+
+- semitones: 12
+  quality: Perfect octave
+  shorthand: P8
+  alias:

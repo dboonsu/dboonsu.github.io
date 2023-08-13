@@ -4,4 +4,27 @@ title: Intervals
 type: basic_theory
 data_folder: navigation_theory_
 ---
-<h1>Under construction.</h1>
+An interval is simply the distance between two notes. The smallest interval of two different notes is called a semitone (or half-step). The distance
+of two semitones is commonly referred to as a tone (or whole-step). Other important intervals include unison, which is the distance from a note to itself,
+and octaves, which is the same note at a higher or lower frequency. Finally, there is the tritone, which is an augmented fourth or diminished fifth.
+
+Apart from measuring the distance of two notes, intervals can also have quality of perfect, minor, major, augmented, or diminished. The table below
+outlines intervals and their qualities from unison to an octave.
+<br /> 
+
+<table>
+    <tr>
+        <th>Number of Semitones</th>
+        <th>Quality</th>
+        <th>Shorthand</th>
+        <th>Alias</th>
+    </tr>
+    {% for item in site.data.intervals %}
+    <tr>
+        <td>{{item.semitones}}</td>
+        <td>{{item.quality}}</td>
+        <td>{{item.shorthand}}</td>
+        <td>{{item.alias}}</td>
+    </tr>
+    {% endfor %}
+</table>

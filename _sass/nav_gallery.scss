@@ -74,11 +74,12 @@ img.thumbnail {
 }
 
 div.text {
-    width: 50%;
+    width: auto;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 35px;
+    inline-size: 200px;
+    font-size: 25px;
     transition: .5s;
 }

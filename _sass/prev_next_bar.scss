@@ -1,0 +1,52 @@
+@import 'colors';
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+div.prev_next_bar {
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient($lighter_peach, $darkest_peach);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align:center;
+}
+
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.lbox {
+    flex: 1;
+    text-align: right;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.cbox {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rbox {
+    flex: 1;
+    text-align: left;
+    animation: fadeIn;
+    animation-duration: 1s;
+}

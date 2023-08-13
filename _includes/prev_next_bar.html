@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/assets/css/styles_prev_next_bar.css">
+
+<!--Locating which item we're working with w/ respect to the data files-->
+{% assign type = page.type %}
+{% assign folder = page.data_folder %}
+{% assign data_loc = type | downcase | prepend: folder %}
+{% assign item = site.data[data_loc] | where: "name", page.title %}
+{% assign item = item.first %}
+
+<!--Getting the previous and next items-->
+{% assign prev = item["number"] | plus: -1%}
+{% assign next = item["number"]| plus: 1%}
+
+{% assign prev_item = site.data[data_loc] | where: "number", prev %}
+{% assign next_item = site.data[data_loc] | where: "number", next %}
+
+<!--Display previous and next items-->
+<div class="prev_next_bar">
+    {% if prev_item and prev_item.size != 0 %}
+    {% assign prev_link = prev_item.first.link %}
+    {% assign prev_name = prev_item.first.name %}
+
+    {% elsif prev_item and prev_item.size == 0 %}
+    {% assign prev_link = "theory" %}
+    {% assign prev_name = "Gallery" %}
+
+    {% endif %}
+
+    {% if next_item and next_item.size != 0  %}
+    {% assign next_link = next_item.first.link %}
+    {% assign next_name = next_item.first.name %}
+
+    {% elsif next_item and next_item.size == 0 %}
+    {% assign next_link = "theory" %}
+    {% assign next_name = "Gallery" %}
+    {% endif %}
+    
+    <div class="wrap">
+        <div class="lbox"><a href="{{site.baseurl}}/{{prev_link}}.html"> < {{prev_name}} </a></div>
+        <div class="cbox">|</div>
+        <div class="rbox"><a href="{{site.baseurl}}/{{next_link}}.html"> {{next_name}} > </a></div>
+    </div>
+</div>

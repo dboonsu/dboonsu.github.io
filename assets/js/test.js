@@ -19,5 +19,5 @@ function addObserver(element, options) {
 }
 
 scrollTrigger('.scroll-reveal', {
-    rootMargin: '-50px'
+    threshold: '.3'
 });

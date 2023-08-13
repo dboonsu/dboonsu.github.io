@@ -1,12 +1,11 @@
 @import 'colors';
 
+.current_page {
+	background-image: linear-gradient($darker_peach, $lighter_peach);
+}
+
 body {
 	padding-top: 60px;
 	font-family: "Baskerville Old Face", serif;
 	background-color: $lighter_peach;
-}
-
-.main_paragraph {
-	padding-left: 50px;
-	padding-right: 50px;
 }

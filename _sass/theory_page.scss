@@ -1,5 +1,6 @@
 @import 'colors';
 
+// Keyframes
 @keyframes fadeInLeft {
     0% {
         transform: translateX(-30%);
@@ -22,7 +23,8 @@
     }
 }
 
-@keyframes wipeLeft {
+
+@keyframes blurIn {
     0% {
         filter: blur(10px);
     }
@@ -32,6 +34,7 @@
     }
 }  
 
+// Content
 h1 {
     text-align: center;
     align-content: center;
@@ -68,6 +71,7 @@ div.main_content {
     max-width: 50em;
 }
 
+// Animation
 .scroll-reveal {
     opacity: 0
 }
@@ -82,7 +86,7 @@ div.main_content {
     animation-fill-mode: both;
 }
 
-.wipe-left {
-    animation: wipeLeft 1s;
+.blur-in {
+    animation: blurIn 1s;
     animation-fill-mode: both;
 }

@@ -1,9 +1,8 @@
 @import 'colors';
 
-@keyframes dropFromTop {
+@keyframes fadeInTop {
     0% {
         transform: translateY(-30%);
-        opacity: -1;
     }
 
     100% {
@@ -40,11 +39,54 @@ div.box {
     box-shadow: $darker_peach 10px 10px;
 }
 
+div.text {
+    width: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    inline-size: 200px;
+    font-size: 25px;
+    transition: .5s;
+}
+
+img.thumbnail {
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 200px;
+    height: 200px;
+    transition: .5s;
+}
+
+// Hover Animation
 div.box:hover {
     background-color: $darker_peach;
     height: 340px;
     width: 340px;
     box-shadow: $darkest_peach 14px 14px;
+}
+
+div.box:hover img {
+    transform: scale(1.05, 1);
+    max-width: auto;
+    height: 220px;
+}
+
+div.box:hover div.text {
+    margin-top: 30px;
+}
+
+// Animation 
+.scroll-reveal {
+    opacity: 0;
+}
+
+.fade-in-top {
+    animation: fadeInTop 1s ease-out;
+    animation-fill-mode: both;
 }
 
 .left {
@@ -59,46 +101,3 @@ div.box:hover {
     animation-delay: 200ms;
 }
 
-.scroll-reveal {
-    opacity: 0;
-}
-
-.active {
-    animation-name: dropFromTop;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    opacity: 1;
-}
-
-/* need to manually set height to make margins work */
-div.box:hover img {
-    transform: scale(1.05, 1);
-    max-width: auto;
-    height: 220px;
-}
-
-div.box:hover div.text {
-    margin-top: 30px;
-}
-
-img.thumbnail {
-    display: flex;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    max-width: 200px;
-    height: 200px;
-    transition: .5s;
-}
-
-div.text {
-    width: auto;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    inline-size: 200px;
-    font-size: 25px;
-    transition: .5s;
-}

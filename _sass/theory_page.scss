@@ -2,7 +2,6 @@
 
 @keyframes fadeInLeft {
     0% {
-        opacity: 0;
         transform: translateX(-30%);
     }
 
@@ -14,7 +13,6 @@
 
 @keyframes fadeInRight {
     0% {
-        opacity: 0;
         transform: translateX(30%);
     }
 
@@ -23,6 +21,16 @@
         transform: translateX(0%);
     }
 }
+
+@keyframes wipeLeft {
+    0% {
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}  
 
 h1 {
     text-align: center;
@@ -60,12 +68,21 @@ div.main_content {
     max-width: 50em;
 }
 
-.left-fade-in {
-    animation: fadeInLeft 1s ease-out calc(var(--animation-order) * 500ms);
+.scroll-reveal {
+    opacity: 0
+}
+
+.fade-in-left {
+    animation: fadeInLeft 1s ease-out 0s;
     animation-fill-mode: both;
 }
 
-.right-fade-in {
-    animation: fadeInRight 1s ease-out calc(var(--animation-order) * 500ms);
+.fade-in-right {
+    animation: fadeInRight 1s ease-out 0s;
+    animation-fill-mode: both;
+}
+
+.wipe-left {
+    animation: wipeLeft 1s;
     animation-fill-mode: both;
 }

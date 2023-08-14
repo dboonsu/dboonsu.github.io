@@ -3,12 +3,20 @@ layout: t_theory
 title: Clefs
 type: notation
 data_folder: navigation_theory_
+animation_list:
+    - fade-in-left,
+    - wipe-left,
+    - fade-in-right,
+    - wipe-left,
+    - fade-in-left,
+    - wipe-left
 ---
+
 <p>Clefs are used to indicate which lines and spaces on the staff represent which notes.</p>
 <br />
 <h2>Treble Clef</h2>
 <div class="image-w-text">
-    <img class="left-fade-in" style="--animation-order: 0" src="{{site.baseurl}}/assets/images/clefs/treble_clef.png" width="60px" height="120px">
+    <img class="scroll-reveal" src="{{site.baseurl}}/assets/images/clefs/treble_clef.png" width="60px" height="120px">
     <p>
         Take, for example, the treble clef. Also known as the G-clef, it rests upon the staff and tells musicians which notes are which.
         From the bottom going upwards, the five lines represent the notes E, G, B, D, F, meaning the spaces represent F, A, C, E. The bottom
@@ -17,7 +25,7 @@ data_folder: navigation_theory_
 </div>
 <br />
 <br />
-<img src="{{site.baseurl}}/assets/images/notation/treble_notated.png" width="800px" height="200px">
+<img class="scroll-reveal" src="{{site.baseurl}}/assets/images/notation/treble_notated.png" width="800px" height="200px">
 <br />
 <br />
 <h2>Bass Clef</h2>
@@ -27,16 +35,16 @@ data_folder: navigation_theory_
         going upwards, the five lines now represent the notes G, B, D, F, A and the spaces represent A, C, E, G. The note F is in between the
         two dots on the F-clef.
     </p>
-    <img class="right-fade-in" style="--animation-order: 1" src="{{site.baseurl}}/assets/images/clefs/bass_clef.png" width="62px" height="67px">
+    <img class="scroll-reveal" src="{{site.baseurl}}/assets/images/clefs/bass_clef.png" width="62px" height="67px">
 </div>
 <br />
 <br />
-<img src="{{site.baseurl}}/assets/images/notation/bass_notated.png" width="800px" height="200px">
+<img class="scroll-reveal" src="{{site.baseurl}}/assets/images/notation/bass_notated.png" width="800px" height="200px">
 <br />
 <br />
 <h2>Alto and Tenor Clef</h2>
 <div class="image-w-text">
-    <img class="left-fade-in" style="--animation-order: 2" src="{{site.baseurl}}/assets/images/clefs/tenor_clef.png" width="61px" height="84px">
+    <img class="scroll-reveal" src="{{site.baseurl}}/assets/images/clefs/tenor_clef.png" width="61px" height="84px">
     <p>
         The alto and tenor clef, or C-clef, are slightly less common clefs. From the bottom going upwards, the alto clef assigns the notes
         F, A, C, E, G to the lines going bottom-up and G, B, D, F to the spaces. The note C is in the middle of the C-clef. The two clefs
@@ -45,4 +53,6 @@ data_folder: navigation_theory_
 </div>
 <br />
 <br />
-<img src="{{site.baseurl}}/assets/images/notation/tenor_notated.png" width="800px" height="200px">
+<img class="scroll-reveal" src="{{site.baseurl}}/assets/images/notation/tenor_notated.png" width="800px" height="200px">
+
+<script src="{{ site.baseurl }}{% link assets/js/test.js %}" animation_list="{{page.animation_list}}" threshold=".8"></script>

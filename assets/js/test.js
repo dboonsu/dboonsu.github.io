@@ -1,16 +1,25 @@
-function scrollTrigger(selector, options = {}) {
+function scrollTriggerHeterogenousAnimations(selector, options = {}) {
     let elements = document.querySelectorAll(selector)
     elements = Array.from(elements)
-    elements.forEach(element => {
-        addObserver(element, options)
-    })
+    for (let i = 0; i < elements.length; i++) {
+        console.log(i);
+        addObserver(elements[i], options, i);
+    }
+}
+
+function scrollTriggerHomogenousAnimations(selector, options = {}) {
+    let elements = document.querySelectorAll(selector)
+    elements = Array.from(elements)
+    for (let i = 0; i < elements.length; i++) {
+        addObserver(elements[i], options, 0);
+    }
 }
 // Receiving options passed from the scrollTrigger function
-function addObserver(element, options) {
+function addObserver(element, options, index) {
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active')
+                entry.target.classList.add(animation_list[index])
                 observer.unobserve(entry.target)
             }
         })
@@ -18,6 +27,20 @@ function addObserver(element, options) {
     observer.observe(element)
 }
 
-scrollTrigger('.scroll-reveal', {
-    threshold: '.3'
-});
+let animation_list = document.currentScript.getAttribute('animation_list');
+animation_list = animation_list.split(',')
+
+console.log(animation_list.length);
+
+let threshold = document.currentScript.getAttribute('threshold');
+
+if (animation_list.length == 1) {
+    scrollTriggerHomogenousAnimations('.scroll-reveal', {
+        threshold: threshold
+    });
+}
+else {
+    scrollTriggerHeterogenousAnimations('.scroll-reveal', {
+        threshold: threshold
+    });
+}

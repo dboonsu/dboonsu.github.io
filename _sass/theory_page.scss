@@ -1,8 +1,8 @@
 @import 'colors';
 
+// Keyframes
 @keyframes fadeInLeft {
     0% {
-        opacity: 0;
         transform: translateX(-30%);
     }
 
@@ -14,7 +14,6 @@
 
 @keyframes fadeInRight {
     0% {
-        opacity: 0;
         transform: translateX(30%);
     }
 
@@ -24,6 +23,17 @@
     }
 }
 
+@keyframes blurIn {
+    0% {
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}  
+
+// Content
 h1 {
     text-align: center;
     align-content: center;
@@ -60,12 +70,22 @@ div.main_content {
     max-width: 50em;
 }
 
-.left-fade-in {
-    animation: fadeInLeft 1s ease-out calc(var(--animation-order) * 500ms);
+// Animation
+.scroll-reveal {
+    opacity: 0
+}
+
+.fade-in-left {
+    animation: fadeInLeft 1s ease-out 0s;
     animation-fill-mode: both;
 }
 
-.right-fade-in {
-    animation: fadeInRight 1s ease-out calc(var(--animation-order) * 500ms);
+.fade-in-right {
+    animation: fadeInRight 1s ease-out 0s;
+    animation-fill-mode: both;
+}
+
+.blur-in {
+    animation: blurIn 1s;
     animation-fill-mode: both;
 }

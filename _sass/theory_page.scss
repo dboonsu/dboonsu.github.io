@@ -1,5 +1,71 @@
+@import 'colors';
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 h1 {
     text-align: center;
     align-content: center;
     font-size: 60px;
+    color: $darkest_peach;
+}
+
+h2 {
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    color: $darkest_peach;
+}
+
+div.image-w-text {
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.image-w-text img {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+div.image-w-text p {
+    display: flex;
+    align-items: center;
+}
+
+div.main_content {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50em;
+}
+
+.left-fade-in {
+    animation: fadeInLeft 1s ease-out calc(var(--animation-order) * 500ms);
+    animation-fill-mode: both;
+}
+
+.right-fade-in {
+    animation: fadeInRight 1s ease-out calc(var(--animation-order) * 500ms);
+    animation-fill-mode: both;
 }

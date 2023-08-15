@@ -1,9 +1,7 @@
 <link rel="stylesheet" href="/assets/css/styles_prev_next_bar.css">
 
 <!--Locating which item we're working with w/ respect to the data files-->
-{% assign type = page.type %}
-{% assign folder = page.data_folder %}
-{% assign data_loc = type | downcase | prepend: folder %}
+{% assign data_loc = page.type | downcase | prepend: page.data_folder %}
 {% assign item = site.data[data_loc] | where: "name", page.title %}
 {% assign item = item.first %}
 

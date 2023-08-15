@@ -23,7 +23,6 @@
     }
 }
 
-
 @keyframes blurIn {
     0% {
         filter: blur(10px);
@@ -49,26 +48,29 @@ h2 {
     color: $darkest_peach;
 }
 
-div.image-w-text {
-    display: flex;
-    justify-content: flex-start;
-}
-
-div.image-w-text img {
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-div.image-w-text p {
-    display: flex;
-    align-items: center;
-}
-
 div.main_content {
     align-content: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 50em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 // Animation

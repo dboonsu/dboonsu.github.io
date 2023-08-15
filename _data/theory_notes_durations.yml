@@ -1,0 +1,20 @@
+- name: Whole Note
+  image: /assets/images/notes/whole_note.png
+  text: The whole note is the longest note, lasting four quarter notes.
+
+- name: Half Note
+  image: /assets/images/notes/half_note.png
+  text: The half note lasts for two quarter notes.
+
+- name: Quarter Note
+  image: /assets/images/notes/quarter_note.png
+  text: The quarter note's duration depends on the time signature!
+
+- name: Eighth Note
+  image: /assets/images/notes/eighth_note.png
+  text: The eighth note lasts for half a quarter note and unfortunately has a 'ghth' in its name.
+
+- name: Sixteenth Note
+  image: /assets/images/notes/sixteenth_note.png
+  text: The sixteenth note is longest in name and shortest in length at a quarter of a quarter note.
+

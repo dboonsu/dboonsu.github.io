@@ -3,5 +3,47 @@ layout: t_theory
 title: Notes
 type: notation
 data_folder: navigation_theory_
+animation_list:
+    - blur-in,
+    - blur-in,
+    - blur-in,
+    - blur-in,
+    - blur-in,
+    - blur-in,
+animation_threshold:
+    - .8
+flashcard_file: theory_notes_durations
 ---
-<h1>Under construction.</h1>
+
+<div class="center">
+    <p>Notes represent a pitch and duration of a sound.</p>
+</div>
+<br />
+<br />
+<h2>12-Tone Music</h2>
+<p>
+    Mathematically, a note corresponds to a frequency measured in hertz (Hz) or vibrations per second. In concerts, orchestras will tune their
+    instruments to a central note of A vibrating at 440 Hz. Suppose you doubled this note's frequency to 880 Hz. The resulting note would
+    still be an A note at a higher pitch. Similarly, if you halved its frequency to 220 Hz, the result would be a lower pitched A.
+    This rule of doubling and halving holds for any note.
+</p>
+<p>
+    What about the notes in between? Because of math and the history of (especially Western) music, our ears have collectively decided that we
+    should use 12 notes of fixed frequencies. The formula to calculate the frequency of a note where x is the distance in semitones is:
+</p>
+<div class="center">
+    <img class="scroll-reveal" src="{{site.baseurl}}/assets/images/notation/twelve_tone_formula.png" width="600x" height="90px">
+</div>
+<p>
+    Thus, we can calculate the frequencies for the notes in the 12-tone equal temperament system. These notes are A, A#, B, C, C#, D, D#, E, F,
+    F#, G, G#, and back to A. Astute observers will note that there is no B# or E#. The explanation for this is math and history. Technically,
+    however, a B# would be the same pitch as C.
+</p>
+
+<h2>Duration</h2>
+<p>
+    Now that we understand the pitch of a note, we can discuss the duration aspect.
+</p>
+
+<link rel="stylesheet" href="/assets/css/styles_flashcard_gallery.css">
+{% include flashcard_gallery.html %}

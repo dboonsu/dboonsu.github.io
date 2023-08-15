@@ -1,0 +1,24 @@
+<!-- Scroll animations (if used) are put in the front matter
+     wrt order that the page is loaded.-->
+
+
+<!--Locating which item we're working with w/ respect to the data files-->
+{% assign data_loc = page.flashcard_file %}
+{% assign items = site.data[data_loc] %}
+
+<!--Display previous and next items-->
+<div class="flex-container-wrap">
+    {% for item in items %}
+    <div class="flashcard scroll-reveal">
+        <div class="flashcard_content">
+            <div class="flashcard_front">
+                <img src="{{item.image}}" width="125px" height="125px">
+            </div>
+            <div class="flashcard_back">
+                <h3>{{item.name}}</h3>
+                <p>{{item.text}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

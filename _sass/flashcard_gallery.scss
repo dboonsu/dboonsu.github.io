@@ -1,0 +1,41 @@
+@import 'colors';
+
+.flashcard {
+    margin: 30px;
+    height: 150px;
+    width: 150px;
+}
+
+.flashcard_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    transform-style: preserve-3d;
+}
+
+.flashcard:hover .flashcard_content {
+    transform: rotateY(180deg);
+}
+
+.flashcard_front, .flashcard_back {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: $lightest_peach;
+    border-radius: 20px;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    backface-visibility: hidden;
+    box-shadow: $darker_peach 10px 10px 10px;
+}
+
+.flashcard_back {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: $darker_peach 10px 10px 10px;
+    background: $middle_peach;
+    transform: rotateY(180deg);
+}
